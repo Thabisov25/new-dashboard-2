@@ -1,0 +1,204 @@
+{
+    "formulas": [
+      {
+        "name": "Area of a Triangle",
+        "formula": "A = \\frac{1}{2} \\times B \\times H",
+        "breakdown": {
+          "B": "Base",
+          "H": "Height"
+        },
+        "example": {
+          "problem": "Find the area of a triangle with base 6m and height 8m.",
+          "solution": [
+            "B = 6m, H = 8m",
+            "A = \\frac{1}{2} \\times 6m \\times 8m = 24m^2"
+          ]
+        }
+      },
+      {
+        "name": "Area of a Circle",
+        "formula": "A = \\pi \\times r^2",
+        "breakdown": {
+          "r": "Radius of the circle",
+          "\\pi": "Mathematical constant, approximately 3.14159"
+        },
+        "example": {
+          "problem": "Find the area of a circle with radius 5m.",
+          "solution": [
+            "r = 5m",
+            "A = \\pi \\times 5^2 = 25\\pi \\approx 78.54m^2"
+          ]
+        }
+      },
+      {
+        "name": "Circumference of a Circle",
+        "formula": "C = 2\\pi \\times r",
+        "breakdown": {
+          "r": "Radius of the circle",
+          "\\pi": "Mathematical constant, approximately 3.14159"
+        },
+        "example": {
+          "problem": "Find the circumference of a circle with radius 7m.",
+          "solution": [
+            "r = 7m",
+            "C = 2\\pi \\times 7 = 14\\pi \\approx 43.98m"
+          ]
+        }
+      },
+      {
+        "name": "Pythagorean Theorem",
+        "formula": "c = \\sqrt{a^2 + b^2}",
+        "breakdown": {
+          "c": "Hypotenuse of a right triangle",
+          "a": "One of the legs of the right triangle",
+          "b": "The other leg of the right triangle"
+        },
+        "example": {
+          "problem": "Find the hypotenuse of a right triangle with legs of 3m and 4m.",
+          "solution": [
+            "a = 3m, b = 4m",
+            "c = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5m"
+          ]
+        }
+      },
+      {
+        "name": "Quadratic Formula",
+        "formula": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}",
+        "breakdown": {
+          "a": "Coefficient of x^2",
+          "b": "Coefficient of x",
+          "c": "Constant term"
+        },
+        "example": {
+          "problem": "Solve the quadratic equation 2x^2 - 4x - 6 = 0.",
+          "solution": [
+            "a = 2, b = -4, c = -6",
+            "Discriminant = (-4)^2 - 4(2)(-6) = 16 + 48 = 64",
+            "x = \\frac{4 \\pm \\sqrt{64}}{4}",
+            "x = \\frac{4 \\pm 8}{4}",
+            "x = 3 or x = -1"
+          ]
+        }
+      },
+      {
+        "name": "Slope Formula",
+        "formula": "m = \\frac{y_2 - y_1}{x_2 - x_1}",
+        "breakdown": {
+          "m": "Slope of the line",
+          "y_2": "y-coordinate of the second point",
+          "y_1": "y-coordinate of the first point",
+          "x_2": "x-coordinate of the second point",
+          "x_1": "x-coordinate of the first point"
+        },
+        "example": {
+          "problem": "Find the slope of a line passing through points (1, 2) and (3, 6).",
+          "solution": [
+            "x_1 = 1, y_1 = 2, x_2 = 3, y_2 = 6",
+            "m = \\frac{6 - 2}{3 - 1} = \\frac{4}{2} = 2"
+          ]
+        }
+      },
+      {
+        "name": "Simple Interest",
+        "formula": "I = P \\times r \\times t",
+        "breakdown": {
+          "I": "Interest earned",
+          "P": "Principal amount (initial investment)",
+          "r": "Interest rate per period",
+          "t": "Time the money is invested or borrowed for"
+        },
+        "example": {
+          "problem": "Calculate the interest on an investment of $1000 at an interest rate of 5% per year for 3 years.",
+          "solution": [
+            "P = 1000, r = 0.05, t = 3",
+            "I = 1000 \\times 0.05 \\times 3 = 150"
+          ]
+        }
+      },
+      {
+        "name": "Compound Interest",
+        "formula": "A = P \\times \\left(1 + \\frac{r}{n}\\right)^{nt}",
+        "breakdown": {
+          "A": "Amount of money accumulated after n years, including interest",
+          "P": "Principal amount (initial investment)",
+          "r": "Annual interest rate (decimal)",
+          "n": "Number of times the interest is compounded per year",
+          "t": "Time the money is invested or borrowed for, in years"
+        },
+        "example": {
+          "problem": "Find the compound interest on $2000 at an interest rate of 4% compounded quarterly for 5 years.",
+          "solution": [
+            "P = 2000, r = 0.04, n = 4, t = 5",
+            "A = 2000 \\times \\left(1 + \\frac{0.04}{4}\\right)^{4 \\times 5}",
+            "A = 2000 \\times (1.01)^{20} \\approx 2000 \\times 1.219 = 2438"
+          ]
+        }
+      },
+      {
+        "name": "Newton's Second Law of Motion",
+        "formula": "F = ma",
+        "breakdown": {
+          "F": "Force",
+          "m": "Mass of the object",
+          "a": "Acceleration of the object"
+        },
+        "example": {
+          "problem": "Find the force needed to accelerate a 10kg object at 2m/s².",
+          "solution": [
+            "m = 10kg, a = 2m/s^2",
+            "F = 10 \\times 2 = 20N"
+          ]
+        }
+      },
+      {
+        "name": "Gravitational Potential Energy",
+        "formula": "U = mgh",
+        "breakdown": {
+          "U": "Gravitational potential energy",
+          "m": "Mass of the object",
+          "g": "Acceleration due to gravity (9.8m/s²)",
+          "h": "Height above the reference point"
+        },
+        "example": {
+          "problem": "Find the gravitational potential energy of a 5kg object lifted to a height of 10m.",
+          "solution": [
+            "m = 5kg, h = 10m",
+            "U = 5 \\times 9.8 \\times 10 = 490J"
+          ]
+        }
+      },
+      {
+        "name": "Kinetic Energy",
+        "formula": "K = \\frac{1}{2} mv^2",
+        "breakdown": {
+          "K": "Kinetic energy",
+          "m": "Mass of the object",
+          "v": "Velocity of the object"
+        },
+        "example": {
+          "problem": "Find the kinetic energy of a 10kg object moving at 3m/s.",
+          "solution": [
+            "m = 10kg, v = 3m/s",
+            "K = \\frac{1}{2} \\times 10 \\times 3^2 = \\frac{1}{2} \\times 10 \\times 9 = 45J"
+          ]
+        }
+      },
+      {
+        "name": "Ohm's Law",
+        "formula": "V = IR",
+        "breakdown": {
+          "V": "Voltage",
+          "I": "Current",
+          "R": "Resistance"
+        },
+        "example": {
+          "problem": "Find the voltage across a resistor with resistance of 10Ω and a current of 2A.",
+          "solution": [
+            "R = 10\\Omega, I = 2A",
+            "V = 2 \\times 10 = 20V"
+          ]
+        }
+      }
+    ]
+  }
+  

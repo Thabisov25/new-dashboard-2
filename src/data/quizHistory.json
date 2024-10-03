@@ -1,0 +1,39 @@
+{
+    "students": {
+      "S1001": {
+        "quizHistory": [
+          {
+            "date": "2024-09-05",
+            "subject": "Physical Science",
+            "topic": "Mechanics",
+            "numQuestions": 10,
+            "score": 8,
+            "feedback": "Great job! You're doing really well!"
+          },
+          {
+            "date": "2024-09-10",
+            "subject": "Geography",
+            "topic": "Climate",
+            "numQuestions": 5,
+            "score": 3,
+            "feedback": "Good effort! Keep practicing!"
+          }
+        
+        ]
+      },
+      "S1002": {
+        "quizHistory": [
+          {
+            "date": "2024-09-15",
+            "subject": "Mathematics",
+            "topic": "Algebra",
+            "numQuestions": 10,
+            "score": 9,
+            "feedback": "Outstanding! You got everything correct!"
+          }
+       
+        ]
+      }
+    }
+  }
+  
