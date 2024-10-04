@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useCallback, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom'; // Use HashRouter instead of BrowserRouter
 import { Box, Snackbar, Dialog, DialogTitle, DialogActions, Button } from '@mui/material';
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
@@ -42,7 +42,7 @@ function App() {
     <AuthProvider>
       <StudentProvider>
         <NotificationProvider>  {/* Wrap the app in the NotificationProvider */}
-          <Router>
+          <Router> {/* Use HashRouter to fix routing issues */}
             <MainLayout />
           </Router>
         </NotificationProvider>

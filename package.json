@@ -2,7 +2,7 @@
   "name": "vincent-student-dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Thabisov25.github.io/new-dashboard-2",
+  "homepage": "https://thabisov25.github.io/new-dashboard-2",
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
