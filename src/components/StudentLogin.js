@@ -1,4 +1,3 @@
-// src/components/StudentLogin.js
 import React, { useState } from 'react';
 import { Box, Button, TextField, Typography, Paper } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
@@ -26,8 +25,8 @@ const StudentLogin = () => {
       // Call the login function to set authentication
       login();
 
-      // Navigate to the dashboard if login is successful
-      navigate('/dashboard');
+      // Navigate to the dashboard using HashRouter route
+      navigate('/dashboard');  // This should work fine with HashRouter
     } else {
       alert('Invalid Student ID or Password');
     }
