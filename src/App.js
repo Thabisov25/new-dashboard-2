@@ -28,7 +28,7 @@ function App() {
   useEffect(() => {
     // Register service worker for GitHub Pages
     if ('serviceWorker' in navigator && 'PushManager' in window) {
-      navigator.serviceWorker.register('/new-dashboard-2/service-worker.js') // Adjust path for GitHub Pages
+      navigator.serviceWorker.register('%PUBLIC_URL%/service-worker.js') // Adjusted for correct resolution in GitHub Pages
         .then(function(registration) {
           console.log('Service Worker registered with scope:', registration.scope);
         })
