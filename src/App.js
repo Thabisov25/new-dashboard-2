@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useCallback, useState } from 'react';
-import { HashRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom'; // Use HashRouter instead of BrowserRouter
+import { HashRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom'; // Use HashRouter for GitHub Pages
 import { Box, Snackbar, Dialog, DialogTitle, DialogActions, Button } from '@mui/material';
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
@@ -22,13 +22,13 @@ import ProtectedRoute from './components/ProtectedRoute';
 import AdminProtectedRoute from './components/AdminProtectedRoute';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { StudentProvider } from './contexts/StudentContext';
-import { NotificationProvider } from './contexts/NotificationContext';  // Import NotificationProvider
+import { NotificationProvider } from './contexts/NotificationContext';
 
 function App() {
   useEffect(() => {
-    // Register service worker
+    // Register service worker for GitHub Pages
     if ('serviceWorker' in navigator && 'PushManager' in window) {
-      navigator.serviceWorker.register('/service-worker.js')
+      navigator.serviceWorker.register('/new-dashboard-2/service-worker.js') // Adjust path for GitHub Pages
         .then(function(registration) {
           console.log('Service Worker registered with scope:', registration.scope);
         })
@@ -41,8 +41,8 @@ function App() {
   return (
     <AuthProvider>
       <StudentProvider>
-        <NotificationProvider>  {/* Wrap the app in the NotificationProvider */}
-          <Router> {/* Use HashRouter to fix routing issues */}
+        <NotificationProvider>
+          <Router> {/* Using HashRouter for proper GitHub Pages routing */}
             <MainLayout />
           </Router>
         </NotificationProvider>
