@@ -24,8 +24,10 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-katex": "^3.0.1",
+    "react-native-web": "^0.19.12",
     "react-router-dom": "^6.26.1",
     "react-scripts": "5.0.1",
+    "react-snap": "^1.23.0",
     "react-transition-group": "^4.4.5",
     "web-push": "^3.6.7",
     "web-vitals": "^2.1.4"
@@ -37,7 +39,8 @@
     "eject": "react-scripts eject",
     "start:backend": "node backend/server.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+	"postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": [
